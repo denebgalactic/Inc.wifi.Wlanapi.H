@@ -11,6 +11,12 @@ Some lower`ed feature for CIMWin32 & Wlan network tuning.
 [̲̅$̲̅(̲̅ ͡❤°̲̅)̲̅$̲̅]
 
 ## Why?
+<ul>
+<li>-Reduse response time net connect.</li>
+<li>-Stop Game Lags and lower ping latency on online games.</li>
+<li>-Change traffic priority with TOS Delay & Throughput flags</li>
+<li>-Wifi props conf</li>
+</ul>
 -Reduse response time net connect.
 -Stop Game Lags and lower ping latency on online games.
 <img src="https://i.ibb.co/X20Yp7g/12311.jpg" width="44" height="44">
