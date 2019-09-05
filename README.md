@@ -1,11 +1,9 @@
 # Inc.wifi.Wlanapi.H
 lite wifi &amp; cimwin32 network tweak
 
-<a href="https://evilmartians.com/?utm_source=imgproxy">
-<img src="https://evilmartians.com/badges/sponsored-by-evil-martians.svg" alt="Sponsored by Evil Martians" width="236" height="54">
+<a href="http://pesap.com">
+<img src="https://lh3.googleusercontent.com/9wuxzj6fnhYHLYYhwtfoSitzsuHbQpKIVXuBdJr6yKE_qCxS88ekWZZs19N_wbf_8gtvdH4Gw_vT8yC5VTimZt0hxo3UD3vBbIlfmaU7oRR_ciSNf5s=w572" width="236" height="54">
 </a>
-
-[![img2css](https://lh3.googleusercontent.com/9wuxzj6fnhYHLYYhwtfoSitzsuHbQpKIVXuBdJr6yKE_qCxS88ekWZZs19N_wbf_8gtvdH4Gw_vT8yC5VTimZt0hxo3UD3vBbIlfmaU7oRR_ciSNf5s=w572)](http://pesap.com/)
 
 ## what is it?
 
