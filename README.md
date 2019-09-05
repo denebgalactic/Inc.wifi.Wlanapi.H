@@ -27,4 +27,3 @@ It allows you to specify the priority of network traffic and manage the stack, p
 ```
 [̲̅$̲̅(̲̅ ͡❤°̲̅)̲̅$̲̅]
 ```
-
