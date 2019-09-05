@@ -2,7 +2,8 @@
 lite wifi &amp; cimwin32 network tweak
 
 
-<img src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0713/9780071380416.jpg" width="300" height="260"><img src="https://images-na.ssl-images-amazon.com/images/I/51NZfJdGy2L._SX325_BO1,204,203,200_.jpg" width="300" height="260">
+<img src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0713/9780071380416.jpg" width="260" height="220"> <img src="https://images-na.ssl-images-amazon.com/images/I/51NZfJdGy2L._SX325_BO1,204,203,200_.jpg" width="260" height="220">
+
 
 <a href="http://pesap.com">
 <img src="https://i.ibb.co/p0kXCmV/nettweak.gif" width="400" height="300">
@@ -25,5 +26,7 @@ Some lower`ed feature for CIMWin32 & Wlan network tuning.
 ## & What else?
 It allows you to specify the priority of network traffic and manage the stack, providing complete control of the transport level of the network interface.
 ```
+[̲̅$̲̅(̲̅ ͡❤°̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ ͡❤°̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ ͡❤°̲̅)̲̅$̲̅]
+[̲̅$̲̅(̲̅ ͡❤°̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ ͡❤°̲̅)̲̅$̲̅]
 [̲̅$̲̅(̲̅ ͡❤°̲̅)̲̅$̲̅]
 ```
