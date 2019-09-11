@@ -10,38 +10,27 @@ Imports System.Runtime.InteropServices _
 
 #End Region
 
-Namespace Emicrox
+Namespace Network
 
     <SuppressUnmanagedCodeSecurity()>
-    Public NotInheritable Class CIMWin32
+    Partial Public NotInheritable Class CIMWin32
 
-#Region " .ctor "
-
-        Public Shared INTERFACES As Dictionary(Of String, ADAPTERPROPERTY) _
-                              = New Dictionary(Of String, ADAPTERPROPERTY)
-
-        <StructLayout(LayoutKind.Sequential, CharSet:=CharSet.Ansi, Pack:=1)>
-        Public Structure ADAPTERPROPERTY
-            Public [T1] As NetworkInterface _
-                 , [T2] As ManagementObject _
-                 , [T3] As ManagementObject
-        End Structure
-
-#End Region
-
-        Shared Sub Processing()
+        Shared Sub EnumInterfaces()
             '
             INTERFACES = New Dictionary(Of String, ADAPTERPROPERTY)
             For Each adapter As NetworkInterface In NetworkInterface.GetAllNetworkInterfaces()
+                '
                 Dim T As ADAPTERPROPERTY = New ADAPTERPROPERTY
                 If Not (INTERFACES.TryGetValue(adapter.Id, T)) Then
                     T.T1 = adapter
                     INTERFACES.Add(adapter.Description, T)
                 End If
+                '
             Next
             '
             For Each [T] As ManagementObject In New ManagementClass("Win32_NetworkAdapterConfiguration").GetInstances()
                 With [T]
+                    '
                     Dim IROPERTY As ADAPTERPROPERTY _
                                   = New ADAPTERPROPERTY
                     If Not (INTERFACES.TryGetValue(.GetPropertyValue("Description"), IROPERTY)) Then
@@ -49,11 +38,13 @@ Namespace Emicrox
                         IROPERTY.T2 = [T]
                         INTERFACES(.GetPropertyValue("Description")) = IROPERTY
                     End If
+                    '
                 End With
             Next
             '
             For Each [T] As ManagementObject In New ManagementClass("Win32_NetworkAdapter").GetInstances()
                 With [T]
+                    '
                     Dim IROPERTY As ADAPTERPROPERTY _
                                   = New ADAPTERPROPERTY
                     If Not (INTERFACES.TryGetValue(.GetPropertyValue("Description"), IROPERTY)) Then
@@ -61,10 +52,18 @@ Namespace Emicrox
                         IROPERTY.T3 = [T]
                         INTERFACES(.GetPropertyValue("Description")) = IROPERTY
                     End If
+                    '
                 End With
             Next
             '
         End Sub
+
+        Public Shared Function GetValue(PropertyName As String) As Integer
+            '
+            Return New ManagementClass("Win32_NetworkAdapterConfiguration") _
+                    .GetInstances()(0).GetPropertyValue(PropertyName)
+            '
+        End Function
 
         Public Shared Sub SetValue(MethodName As String, ParameterName As String, value As Integer)
             '
@@ -110,3 +109,4 @@ Namespace Emicrox
     End Class
 
 End Namespace
+
